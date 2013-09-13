@@ -93,7 +93,7 @@ Details - audio_ALC887-ver_patch script  (see Requirements)
 4. Example: Terminal/audio_alc887-85_patch window
 _____________________________
 
-...$ /Users/dtottle/Downloads/audio_ALC887-master/audio_alc887-85_patch.command ; exit;
+...$ .../Downloads/audio_ALC887-master/audio_alc887-85_patch.command ; exit;
 Prepare Desktop/audio_ALC887 ...
 Archive:  887.zip
    creating: 887/
