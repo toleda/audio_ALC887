@@ -6,6 +6,8 @@ OS X Realtek ALC887 Onboard Audio
 This guide enables OS X Realtek ALC887 onboard audio on Intel based motherboards with a bootable clean install of OS X. The Realtek AppleHDA.kext only works with the codec the kext was edited for and patches the native AppleHDA.kext.
 ____________________________________________________________Download ZIP >  > 
 
+Note: cloverALC, see https://github.com/toleda/audio_cloverALC
+
 Requirements
 1. Native S/L/E/AppleHDA.kext (restore native AppleHDA.kext with Combo Update)
 2. Supported OS X versions:
@@ -54,6 +56,9 @@ https://github.com/toleda/audio_ALCInjection
 4a. Audio_ID = 1/Audio/Inject=1
 4b. Audio_ID = 2/Audio/Inject=2
 4c. Audio_ID = 3/Audio/Inject=3
+5. Chameleon/Chameleon Installer/Customize/Settings
+5a. Audio_ID = 1/HDEF Layout=1
+5b. Audio_ID = 2/HDEF Layout=2
 
 Download
 1. https://github.com/toleda/audio_ALC887
@@ -68,7 +73,7 @@ Two ALC887 versions supported
 2c. Rename 887_v100202.zip to 887.zip
 3. ALC887_v100102 Not supported, use Interim AppleHDA.kext
 
-Installation/Shell Script/.command
+Installation/Shell Script/.command (Do not move folder or files)
 1. Downloads/audio_ALC887-master/
 1a. for 10.9.2/audio_alc887-92_patch.command
 1b. for 10.9.1/audio_alc887-91_patch.command
@@ -129,16 +134,7 @@ Details - audio_ALC887-ver_patch script  (see Requirements)
 _____________________________
 
 ...$ .../Downloads/audio_ALC887-master/audio_alc887-85_patch.command ; exit;
-Prepare Desktop/audio_ALC887 ...
-Archive:  887.zip
-   creating: 887/
-  inflating: 887/Info-84.plist       
-  inflating: 887/Info-85.plist
-  inflating: 887/Info-90.plist    
- extracting: 887/layout1.xml.zlib    
- extracting: 887/layout2.xml.zlib    
- extracting: 887/layout3.xml.zlib    
-  inflating: 887/Platforms.xml.zlib  
+Prepare Desktop/audio_ALC887 ... 
 Install files ...
 Password:
 Patch binary ...
